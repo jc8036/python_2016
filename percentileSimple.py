@@ -1,7 +1,7 @@
 ##IMPORT DATA##
 import csv
 
-with open('data\BrueDataQt.csv') as BrueDataQtcsv: #open the file
+with open('BrueDataQt.csv') as BrueDataQtcsv: #open the file
     reader = csv.reader(BrueDataQtcsv)                  #read lines
     timeSeriesFromCSV=list(reader)                      #create list
     timeSeries=[float(entry[0]) for entry in timeSeriesFromCSV] #convert lists to floats
